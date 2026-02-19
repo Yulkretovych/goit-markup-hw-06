@@ -56,6 +56,73 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="burger-btn">
+          <svg width="24" height="24" class="burger-icon">
+            <use href="./images/icons.svg#icon-burger" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black" />
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">Studio</li>
+              <li class="mobile-nav-item">Portfolio</li>
+              <li class="mobile-nav-item">Contacts</li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mobile-contacts-list">
+              <li class="">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-list-mobile">
+            <li class="mobile-icons-list">
+              <a href="#" class="mobile-social-link">
+                <svg width="24" height="24" class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-social-link">
+                <svg width="24" height="24" class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-social-link">
+                <svg width="24" height="24" class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-social-link">
+                <svg width="24" height="24" class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--#endregion header-->
@@ -63,7 +130,7 @@
     <!--#region hero-->
 
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
@@ -73,7 +140,7 @@
 
       <!--#region features -->
 
-      <section class="hero-second">
+      <section class="hero-second hidden">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
 
@@ -133,7 +200,7 @@
 
       <!--#region team -->
 
-      <section class="team-section">
+      <section class="team-section hidden">
         <div class="container">
           <h2 class="second-header">Our Team</h2>
           <ul class="team-list">
@@ -316,7 +383,7 @@
       <!--#endregion team-->
 
       <!--#region portfolio-->
-      <section class="portfolio-section">
+      <section class="portfolio-section hidden">
         <div class="container">
           <h2 class="second-header">Our Portfolio</h2>
 
@@ -447,7 +514,7 @@
     <!--#endregion portfolio-->
 
     <!--#region footer-->
-    <footer class="footer-hero">
+    <footer class="footer-hero hidden">
       <div class="container">
         <div class="logo-container">
           <a class="logo logo-footer" href="./index.html"
@@ -520,7 +587,7 @@
 
     <!--#region backdrop-->
 
-    <div class="modal-overlay">
+    <div class="modal-overlay hidden">
       <div class="modal">
         <div class="close-button-wrapper">
           <button type="button" class="close-button">
