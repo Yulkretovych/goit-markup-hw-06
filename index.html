@@ -64,7 +64,7 @@
         </button>
       </div>
 
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close">
             <svg class="close-icon" width="8" height="8">
@@ -130,7 +130,7 @@
     <!--#region hero-->
 
     <main>
-      <section class="hero hidden">
+      <section class="hero">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
@@ -140,7 +140,7 @@
 
       <!--#region features -->
 
-      <section class="hero-second hidden">
+      <section class="hero-second">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
 
@@ -200,7 +200,7 @@
 
       <!--#region team -->
 
-      <section class="team-section hidden">
+      <section class="team-section">
         <div class="container">
           <h2 class="second-header">Our Team</h2>
           <ul class="team-list">
@@ -209,11 +209,16 @@
                 <img
                   class="team-src"
                   src="./images/mark-guerrero.jpg"
-                  alt="man-with-beard"
+                  srcset="
+                    ./images/mark-guerrero.jpg   1x,
+                    ./images/mark-guerrero2x.jpg 2x
+                  "
                   width="264"
+                  height="260"
+                  alt="Mark Guerrero"
                 />
                 <div class="container photo-container">
-                  <h3 class="third-header">Mark Guerrero</h3>
+                  <h3 class="team-third-header">Mark Guerrero</h3>
                   <p class="descr">Product Designer</p>
                   <ul class="social-list">
                     <li>
@@ -257,7 +262,7 @@
                 width="264"
               />
               <div class="container photo-container">
-                <h3 class="third-header">Tom Ford</h3>
+                <h3 class="team-third-header">Tom Ford</h3>
                 <p class="descr">Frontend Developer</p>
                 <ul class="social-list">
                   <li>
@@ -300,7 +305,7 @@
                 width="264"
               />
               <div class="container photo-container">
-                <h3 class="third-header">Camila Garcia</h3>
+                <h3 class="team-third-header">Camila Garcia</h3>
                 <p class="descr">Marketing</p>
                 <ul class="social-list">
                   <li>
@@ -343,7 +348,7 @@
                 width="264"
               />
               <div class="container photo-container">
-                <h3 class="third-header">Daniel Wilson</h3>
+                <h3 class="team-third-header">Daniel Wilson</h3>
                 <p class="descr">UI Designer</p>
                 <ul class="social-list">
                   <li>
@@ -383,7 +388,7 @@
       <!--#endregion team-->
 
       <!--#region portfolio-->
-      <section class="portfolio-section hidden">
+      <section class="portfolio-section">
         <div class="container">
           <h2 class="second-header">Our Portfolio</h2>
 
@@ -403,7 +408,7 @@
                 />
               </div>
               <div class="portfolio-border">
-                <h3 class="third-header">Banking App</h3>
+                <h3 class="portfolio-header">Banking App</h3>
                 <p class="descr portfolio-descr">App</p>
               </div>
             </li>
@@ -423,7 +428,7 @@
                 />
               </div>
               <div class="portfolio-border">
-                <h3 class="third-header">Cashless Payment</h3>
+                <h3 class="portfolio-header">Cashless Payment</h3>
                 <p class="descr portfolio-descr">Marketing</p>
               </div>
             </li>
@@ -443,7 +448,7 @@
                 />
               </div>
               <div class="portfolio-border">
-                <h3 class="third-header">Meditation App</h3>
+                <h3 class="portfolio-header">Meditation App</h3>
                 <p class="descr portfolio-descr">App</p>
               </div>
             </li>
@@ -463,7 +468,7 @@
                 />
               </div>
               <div class="portfolio-border">
-                <h3 class="third-header">Taxi Service</h3>
+                <h3 class="portfolio-header">Taxi Service</h3>
                 <p class="descr portfolio-descr">Marketing</p>
               </div>
             </li>
@@ -483,7 +488,7 @@
                 />
               </div>
               <div class="portfolio-border">
-                <h3 class="third-header">Screen Illustrations</h3>
+                <h3 class="portfolio-header">Screen Illustrations</h3>
                 <p class="descr portfolio-descr">Design</p>
               </div>
             </li>
@@ -503,7 +508,7 @@
                 />
               </div>
               <div class="portfolio-border">
-                <h3 class="third-header">Online Courses</h3>
+                <h3 class="portfolio-header">Online Courses</h3>
                 <p class="descr portfolio-descr">Marketing</p>
               </div>
             </li>
@@ -514,7 +519,7 @@
     <!--#endregion portfolio-->
 
     <!--#region footer-->
-    <footer class="footer-hero hidden">
+    <footer class="footer-hero">
       <div class="container">
         <div class="logo-container">
           <a class="logo logo-footer" href="./index.html"
