@@ -126,12 +126,12 @@ button {
         gap: 40px;
     }
 
-    .header-logo {
+    .logo-header {
         padding: 24px 0;
         margin-right: 120px;
     }
 
-    .header-nav {
+    .nav-header {
         display: flex;
         align-items: center;
     }
@@ -201,7 +201,7 @@ button {
     .burger-btn {
         display: none;
     }
-    .header-logo {
+    .logo-header {
         margin-right: 76px;
     }
 
@@ -512,6 +512,10 @@ button {
     flex-wrap: wrap;
     gap: 72px;
     list-style: none;
+    width: 100%;
+}
+
+.feature-item {
     width: 100%;
 }
 
@@ -942,6 +946,7 @@ button {
 .footer-label-container {
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
 .footer-input {
@@ -953,7 +958,6 @@ button {
     background-color: #2e2f42;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 16px;
-    margin-top: 16px;
 }
 
 .footer-input:hover,
@@ -991,7 +995,6 @@ button {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: auto;
-    margin-top: 16px;
 }
 
 .footer-form-button:hover,
@@ -1048,10 +1051,6 @@ button {
     .footer-input {
         width: 264px;
         }
-
-    .footer-form-button { 
-        margin-left: 24px;
-    }
 }
 
 @media screen and (min-width: 1158px) {
