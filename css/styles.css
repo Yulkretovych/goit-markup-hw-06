@@ -666,7 +666,6 @@ button {
 
 .team-section .descr {
     text-align: center;
-    margin-top: 8px;
 }
 
 .social-list {
@@ -913,8 +912,6 @@ button {
 .footer-social-link {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
