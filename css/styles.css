@@ -72,11 +72,6 @@ button {
 .header-container {
     display: flex;
     align-items: center;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -120,20 +115,30 @@ button {
         display: none;
     } 
 
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+
     .nav-list {
         display: flex;
         align-items: center;
         gap: 40px;
+        margin-left: 0;
     }
 
     .logo-header {
-        padding: 24px 0;
-        margin-right: 120px;
+        margin-right: 0;
     }
 
     .nav-header {
-        display: flex;
-        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .address {
+        margin-left: auto;
     }
 
     .nav-link {
@@ -201,6 +206,27 @@ button {
     .burger-btn {
         display: none;
     }
+
+    .header-container {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .nav-header {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address {
+        margin-left: auto;
+    }
+
     .logo-header {
         margin-right: 76px;
     }
@@ -211,12 +237,16 @@ button {
         gap: 40px;
     }
 
-        .contacts-link {
-            padding: 24px 0;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-        }
+    .contacts-link {
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .contacts {
+        margin-left: auto;
+    }
 }
 /* #endregion header  */
 
@@ -229,6 +259,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: #fff;
+    z-index: 1000;
 
     opacity: 0;
     visibility: hidden;
@@ -250,7 +281,6 @@ button {
     display: flex;
     flex-direction: column;
     height: 100%;
-    max-width: 320px;
 }
 
 .mobile-menu-close {
@@ -267,6 +297,16 @@ button {
     height: 24px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+    background-color: #404bbf;
+    color: #fff;
+}
+
+.mobile-menu-close svg {
+    fill: currentColor;
 }
 
 .close-icon {
@@ -338,6 +378,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-social-link:hover,
+.mobile-social-link.focus {
+    background-color: #404bbf;
 }
 
 .mobile-social-icon {
@@ -367,10 +413,8 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    display: flex;
-    align-items: center;
     max-width: 216px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .hero {
@@ -382,8 +426,7 @@ button {
             rgba(46, 47, 66, 0.7)),
         url("../images/people-office.jpg");
     background-repeat: no-repeat;
-    max-width: 320px;
-    height: 432px;
+    padding: 72px 0;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
@@ -394,7 +437,6 @@ button {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/people-office2x.jpg");
-
     }
 }
 
@@ -434,10 +476,8 @@ button {
     }
 
     .hero {
-        padding-top: 112px;
-        padding-bottom: 112px;
+        padding: 112px 0;
         max-width: 768px;
-        height: 436px;
         background-image:
                 linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url("../images/people-office.jpg");
@@ -471,7 +511,7 @@ button {
                     rgba(46, 47, 66, 0.7)),
                 url("../images/people-office-main.jpg");
         max-width: 1440px;
-        height: 600px;
+        padding: 188px 0;
         }
 
         .hero-button {
@@ -643,8 +683,7 @@ button {
 .team-item {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
-    max-width: 264px;
-    height: 428px;
+    width: 264px;
     border-radius: 0 0 4px 4px;
 }
 
@@ -661,7 +700,6 @@ button {
 
 .team-section .third-header {
     text-align: center;
-    margin: auto;
 }
 
 .team-section .descr {
@@ -702,7 +740,6 @@ button {
 
 .team-list {
     margin: 0;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
@@ -716,7 +753,6 @@ button {
 @media screen and (min-width: 1158px) {
 
     .team-list {
-        display: flex;
         gap: 24px;
     }
 
@@ -729,14 +765,6 @@ button {
 /* #endregion team  */
 
 /* #region portfolio  */
-
-.portfolio-section .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-}
 
 .portfolio-section .second-header {
     text-align: center;
@@ -755,9 +783,9 @@ button {
 
 .portfolio-item {
     background: #fff;
+    max-width: 288px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    width: 288px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -822,11 +850,6 @@ button {
         margin-top: 8px;
     }
 
-    .portfolio-item {
-        background: #fff;
-        max-width: 288px;
-    }
-
 @media screen and (min-width: 768px) {
     .portfolio-list {
         display: grid;
@@ -836,7 +859,6 @@ button {
         }
 
     .portfolio-item {
-        width: 356px;
         height: 420px;
     }
 
@@ -857,8 +879,12 @@ button {
         box-shadow: none;
     }
 
-    .portfolio-item {
-        max-width: 360px;
+    .portfolio-item:hover,
+    .portfolio-item:focus {
+        box-shadow:
+            0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 }
 
@@ -1015,17 +1041,14 @@ button {
     
     .logo-footer,
     .footer-hero .descr {
-        display: flex;
         text-align: start;
     }
     
     .footer-hero .container {
-        display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;
         position: relative;
-        max-width: 584px;
         flex-direction: row;
+        max-width: 584px;
     }
 
     .footer-socials-container {
@@ -1066,14 +1089,10 @@ button {
     }
 
     .footer-hero .container {
-        display: flex;
-        align-items: baseline;
-        /* gap: 120px; */
         max-width: 1158px;
     }
 
     .logo-container {
-        margin-left: 156px;
         margin-right: 120px;
     }
 
@@ -1083,7 +1102,6 @@ button {
     } 
 
     .footer-socials-container {
-        display: grid;
         margin-right: 80px;
     }
 
@@ -1102,10 +1120,11 @@ button {
     .footer-label-container {
         display: flex;
         align-items: flex-end;
+        gap: 24px;
     } 
 
     .footer-label {
-        margin-right: 24px;
+        margin-right: 0;
     }
 
     .footer-input {
@@ -1123,7 +1142,6 @@ button {
     }
 
     .footer-form-button {
-        margin-right: 159px;
         margin-left: 0;
     } 
 }
@@ -1211,7 +1229,6 @@ button {
 .form-container {
     border-radius: 4px;
     max-width: 256px;
-    height: 336px;
 }
 
 .overlay-page-name {
@@ -1223,6 +1240,12 @@ button {
     color: #2e2f42;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .form-label {
     font-weight: 400;
     font-size: 12px;
@@ -1232,7 +1255,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    margin-top: 8px;
 }
 
 .name-form-label {
@@ -1312,13 +1334,8 @@ button {
     cursor: pointer;
     border-radius: 4px;
     max-width: 256px;
-    height: 31px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.checkbox-container {
-    display: block;
 }
 
 .checkbox-text-part {
@@ -1341,7 +1358,7 @@ button {
     border: 1px solid rgba(46, 47, 66, 0.4);
     max-width: 16px;
     height: 16px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: none;
     display: flex;
     justify-content: center;
@@ -1407,7 +1424,6 @@ button {
 
     .terms-label {
         max-width: 360px;
-        height: 16px; 
     }
 
     .checkbox-text-part {
@@ -1433,7 +1449,6 @@ button {
 
     .terms-label {
         max-width: 360px;
-        height: 16px;
         display: flex;
         flex-wrap: wrap;
     }
